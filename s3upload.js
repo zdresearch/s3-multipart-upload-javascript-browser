@@ -1,5 +1,5 @@
 function S3MultiUpload(file) {
-    this.PART_SIZE = 1 * 1024 * 1024 * 1024; // Minimum part size defined by aws s3 is 5 MB, maximum 5 GB
+    this.PART_SIZE = 5 * 1024 * 1024 * 1024; // Minimum part size defined by aws s3 is 5 MB, maximum 5 GB
     this.SERVER_LOC = '?'; // Location of the server
     this.completed = false;
     this.file = file;
